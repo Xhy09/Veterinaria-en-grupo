@@ -1,0 +1,17 @@
+create database if not exists refugio;
+use  refugio;
+CREATE TABLE Animal (
+  id INT NOT NULL PRIMARY KEY auto_increment,
+  nombre VARCHAR(100) NOT NULL,
+  especie VARCHAR(100) NOT NULL,
+  raza VARCHAR(100),
+  edad VARCHAR(50),
+  estatus varchar(40)
+);
+CREATE TABLE Adopcion (
+  id INT PRIMARY KEY auto_increment,
+  nombreadoptante varchar(45),
+  Numerodetelefono VARCHAR (45),
+  animal_id INT,
+  fecha_adopcion Varchar(45)
+);
